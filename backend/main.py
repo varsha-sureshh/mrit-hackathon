@@ -73,7 +73,46 @@ class URLAnalyzer:
     def __init__(self):
         self.suspicious_keywords = [
             'login', 'verify', 'account', 'banking', 'paypal', 'security',
-            'update', 'confirm', 'password', 'credential', 'admin'
+            'update', 'confirm', 'password', 'credential', 'admin', 'user','login', 'verify', 'update', 'free', 'bonus', 'reward',
+        'secure', 'bank', 'account', 'wallet', 'crypto', "login", "signin", "verify", "verification", "secure", "security",
+    "update", "confirm", "validate", "authentication", "account",
+    "password", "credential", "support", "helpdesk", "go00gle", "go0gle", "g0ogle", "g00gle"
+
+    # Phishing / urgency
+    "urgent", "alert", "warning", "notice", "locked", "suspended",
+    "unlock", "confirm-now", "must-update", "act-now",
+
+    # Financial / payment fraud
+    "bank", "banking", "wallet", "payment", "payout", "invoice",
+    "billing", "refund", "cashback", "claim",
+
+    # Scams (free/giveaway)
+    "free", "giveaway", "bonus", "win", "reward", "prize", "gift",
+    "coupon", "promo", "lottery",
+
+    # Tech support scam
+    "microsoft-support", "apple-support", "google-support",
+    "windows-fix", "system-repair", "antivirus", "firewall",
+    "malware-removal", "techsupport", "help-center",
+
+    # Obfuscation / redirect patterns
+    "click", "link", "redirect", "forward", "continue", "go-to",
+    "track", "landing", "download", "installer",
+
+    # Crypto / investment scams
+    "crypto", "bitcoin", "eth", "binance", "walletconnect",
+    "ledger", "blockchain", "investment", "trading", "forex",
+
+    # Adult / explicit
+    "xxx", "adult", "sex", "pornstar", "dating", "escort", "cams",
+    "hotgirls", "erotic", "nudes",
+
+    # Malware / piracy distribution
+    "crack", "patch", "hack", "keygen", "serial", "nulled",
+    "modapk", "torrents", "pirated", "warez",
+
+    # Generic high-risk
+    "unofficial", "proxy", "bypass", "fake", "mirror", "unofficial", "proxy", "bypass", "fake", "mirror", "goo00gle", "faceb00k", "paypa1", "amaz0n", "applle", "microsofft", "go000gle", "yaho0", "bingg", "linkediin", "instagrarn", "twltter", "snapchatt", "tiktokk", "reditt", "pinterestt"
         ]
         self.known_malicious_domains = [
             'evil.com', 'phishing.com', 'malware.com'
